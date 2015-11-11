@@ -8,3 +8,5 @@ RUN apt-get update && \
     mv /google-chrome.list ./etc/apt/sources.list.d/ && \
     apt-get update && \
     apt-get install -y google-chrome-stable || true
+
+CMD ["/usr/bin/google-chrome", "--no-default-browser-check", "--user-data-dir=/root/.config/google-chrome/Default"]

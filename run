@@ -1,12 +1,9 @@
 #!/bin/bash  -e
 
 docker run \
-    -i \
-    -t \
     --rm \
     -e DISPLAY=$DISPLAY \
     -v /tmp/.X11-unix:/tmp/.X11-unix \
     -v ${HOME}/.Xauthority:/root/.Xauthority \
     --net=host \
-    efarrer/google-chrome \
-    /usr/bin/google-chrome --no-default-browser-check --user-data-dir=/root/.config/google-chrome/Default
+    efarrer/google-chrome
