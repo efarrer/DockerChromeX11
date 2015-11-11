@@ -1,3 +1,3 @@
 #!/bin/bash  -e
 
-docker build --tag google-chrome .
+docker build --tag efarrer/google-chrome .
